@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Type de Transport</title>
+</head>
+<body>
+<h1>Etape 2 : Déclarez vos frais de transport</h1>
+<fieldset>
+    <h1>Type de transport</h1>
+    <p>Type de transport que vous déclarer</p>
+    <form method="get" action="@{Hebergement}">
+        <input  type="submit" value="Modifier ces informations">
+    </form>
+    <br>
+    <h1>Mon propre véhicule</h1>
+</fieldset>
+<br><br>
+    <h1>Type de transport</h1>
+    <p>Type de transport que vous déclarer</p>
+    <form method="get" action="@{Restauration}">
+        <fieldset>
+            <input  type="Radio">
+            <p>Votre domicile</p>
+        </fieldset>
+    </form>
+    <br>
+    <form method="get" action="@{Restauration}">
+        <fieldset>
+            <input  type="Radio">
+            <p>Votre établissements scolaire</p>
+        </fieldset>
+    </form>
+    <br>
+</body>
+</html>

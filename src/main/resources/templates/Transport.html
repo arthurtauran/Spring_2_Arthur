@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div classe="col-md-12">
+            <p>Detail Formation</p>
+            <p><strong>Transport</strong></p>
+            <p>Hébergement</p>
+            <p>Restauration</p>
+            <p>Coordonnées Bancaire</p>
+
+        </div>
+    </div>
+    <?php $_SESSION["Intituler"] = $_REQUEST["Intituler"];
+    print($_SESSION["Intituler"]);
+    ?>
+    <h1>étapes 2 : Déclaration vos frais de transport</h1>
+    <h2>Quel type de transport avec vous utiliser entre domicile et lieu de formation</h2>
+    <form method="get" action="@{Hebergement}">
+        <input type="button" value="Grande ligne : Train, Avion, Ferry" style="background-color=blue;">
+    </form>
+    <br><br>
+    <form method="get" action="@{Hebergement}">
+        <input type="button" value="Mon propre vihécule">
+    </form>
+
+</div>
+</body>
+</html>
